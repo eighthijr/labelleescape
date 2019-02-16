@@ -1,0 +1,48 @@
+// UTILITIES
+
+// Flex
+
+// Align
+.text-center {
+  text-align: center;
+}
+
+// Visibility
+.only-on-large-screen {
+  display: none;
+  
+  @include media-query($large-screen) {
+    display: block;
+
+    &--inline-block {
+      display: inline-block;
+    }
+  }
+}
+
+.only-on-small-screen {
+  display: block;
+
+  &--inline-block {
+    display: inline-block;
+
+    @include media-query($large-screen) {
+      display: none;
+    }
+  }
+  
+  @include media-query($large-screen) {
+    display: none;
+  }
+}
+
+// Flex
+.flex-direction--column {
+  flex-direction: column;
+}
+
+// Based on Figma
+.border-shadow {
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
