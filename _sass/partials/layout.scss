@@ -10,6 +10,10 @@
   @include media-query($large-screen) {
     padding: none;
   }
+  
+  &--fluid {
+    padding: 0rem;
+  }
 }
 
 // Row
