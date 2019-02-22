@@ -59,10 +59,23 @@
   font-family: sans-serif;
 }
 
-$white: #fff;
-$black: #000;
-$green: #28a745;
-$red:   #dc3545;
+$white:  #fff;
+$black:  #000;
+$green:  #28a745;
+$red:    #dc3545;
+$blue:   #007bff;
+$purple: #6f42c1;
+
+.location {
+  
+  &--html {
+    color: $blue;
+  }
+  
+  &--scss {
+    color: $purple;
+  }
+}
 
 .component-status {
   display:          inline-block;
