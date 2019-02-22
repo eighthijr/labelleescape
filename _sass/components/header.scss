@@ -21,7 +21,6 @@
 .nav {
   @extend .wrapper;
   position: relative;
-  width: 100%;
   @include flexbox();
   align-items: center;
   justify-content: space-between;
