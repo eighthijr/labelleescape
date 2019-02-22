@@ -274,3 +274,85 @@
   background: $white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.btn {
+  padding: 0.5rem 1rem;
+  
+  color: #fff;
+  background-color: #000;
+  
+  opacity: 1;
+  
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  
+  transition: opacity 0.15s ease-in-out;
+  
+  &:hover,
+  &:focus {
+    background-color: #000;
+    
+    opacity: 0.5;
+  }
+}
+
+.btn--brown {
+  background-color: #c59d5f;
+  
+  &:hover,
+  &:focus {
+    background-color: #c59d5f;
+  }
+}
+
+.btn--brown-reverse {
+  color: #c59d5f;
+  background-color: #fff;
+  border: 1px solid #c59d5f;
+  
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+}
+
+.btn--blue {
+  background-color: #06758d;
+  
+  &:hover,
+  &:focus {
+    background-color: #06758d;
+  }
+}
+
+.btn--blue-reverse {
+  color: #06758d;
+  background-color: #fff;
+  border: 1px solid #06758d;
+  
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+}
+
+.btn--green {
+  background-color: #0f9c7a;
+  
+  &:hover,
+  &:focus {
+    background-color: #0f9c7a;
+  }
+}
+
+.btn--green-reverse {
+  color: #0f9c7a;
+  background-color: #fff;
+  border: 1px solid #0f9c7a;
+  
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+}
+
