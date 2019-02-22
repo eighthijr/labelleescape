@@ -4,6 +4,7 @@
 .card {
   @extend .wrapper;
   position: relative;
+  padding: 0;
   
   @include flexbox();
   @extend .flex-direction--column;
