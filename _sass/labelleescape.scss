@@ -66,6 +66,7 @@ $green:  #28a745;
 $red:    #dc3545;
 $blue:   #007bff;
 $purple: #6f42c1;
+$yellow: #ffc107;
 
 .component-name {
   display: inline-block;
@@ -102,4 +103,8 @@ $purple: #6f42c1;
     color:            $white;
     background-color: $red;
   }
+  
+  &--is-in-progress {
+    color:            $white;
+    background-color: $yellow;
 }
