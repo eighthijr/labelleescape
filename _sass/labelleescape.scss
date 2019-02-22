@@ -54,6 +54,9 @@
 // This style is temporary, will be deleted when the project is done
 .trello {
   @extend .wrapper;
+  padding: $spacer;
+  
+  font-family: monospace;
 }
 
 $white: #fff;
@@ -62,7 +65,7 @@ $green: #28a745;
 $red:   #dc3545;
 
 .component-status {
-  padding:          $spacer;
+  padding:          $spacer/2 $spacer;
   
   color:            $white;
   background-color: $black;
