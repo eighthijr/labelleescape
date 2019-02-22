@@ -67,6 +67,8 @@ $blue:   #007bff;
 $purple: #6f42c1;
 
 .component-name {
+  display: inline-block;
+  
   margin: $spacer 0rem;
 }
 
