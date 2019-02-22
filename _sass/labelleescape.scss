@@ -50,3 +50,30 @@
 
 // UTILITIES
 @import "partials/utilities";
+
+// This style is temporary, will be deleted when the project is done
+.trello {
+  @extend .wrapper;
+}
+
+$white: #fff;
+$black: #000;
+#green: #28a745;
+#red:   #dc3545;
+
+.component-status {
+  padding:          $spacer;
+  
+  color:            $white;
+  background-color: $black;
+  
+  &--is-done {
+    color:            $white;
+    background-color: $green;
+  }
+  
+  &--is-waiting-for-review {
+    color:            $white;
+    background-color: $red;
+  }
+}
