@@ -4,12 +4,7 @@
 .card {
   @extend .wrapper;
   position: relative;
-
-  width: 100%;
-
-  margin: 0 0 $spacer;
-  padding: 0;
-
+  
   @include flexbox();
   @extend .flex-direction--column;
 
