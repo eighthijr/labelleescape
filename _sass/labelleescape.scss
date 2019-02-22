@@ -65,9 +65,9 @@ $green: #28a745;
 $red:   #dc3545;
 
 .component-status {
-  display:          block;
+  display:          inline-block;
   
-  margin:           $spacer;
+  margin:           $spacer 0rem;
   padding:          $spacer/2 $spacer;
   
   color:            $white;
