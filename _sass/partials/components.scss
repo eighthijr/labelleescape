@@ -103,7 +103,7 @@
 
 .kartu__head {
   position: relative;
-  padding: 1rem;
+  padding: 2rem 1rem;
   
   @extend .border-radius--top;
 }
@@ -112,12 +112,12 @@
   flex: 1;
   
   position: relative;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .kartu__foot {
   position: relative;
-  padding: 1rem;
+  padding: 2rem 1rem;
   
   @extend .border-radius--bottom;
 }
