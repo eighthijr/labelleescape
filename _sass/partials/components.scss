@@ -88,7 +88,8 @@
 // Kartu
 
 .kartu {
-  @extend .wrapper--fluid;
+  @extend .wrapper;
+  padding: 0;
   
   position: relative;
   
