@@ -1,125 +1,61 @@
-// BASE
+/* Base
+*/
 
-// Fonts, Helvetica & Quicksand
-@font-face { 
-  font-family: "Helvetica Regular";
-  src: url("../../assets/fonts/helvetica-thin.otf");
+/* Font Face */
+@font-face {
+  font-family: "Helvetica";
+  font-weight: normal;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/helvetica-thin.otf");
 }
 
-.helvetica-r {
-  font-family: "Helvetica Reguler";
+@font-face {
+  font-family: "Helvetica";
+  font-weight: bold;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/helvetica-bold.otf");
 }
 
-@font-face { 
-  font-family: "Helvetica Bold";
-  src: url("../../assets/fonts/helvetica-bold.otf");
+@font-face {
+  font-family: "Quicksand";
+  font-weight: normal;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/quicksand-regular.otf");
 }
 
-.helvetica-b {
-  font-family: "Helvetica Reguler";
+@font-face {
+  font-family: "Quicksand";
+  font-weight: bold;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/quicksand-bold.otf");
 }
 
-@font-face { 
-  font-family: "Quicksand Bold";
-  src: url("../../assets/fonts/quicksand-bold.otf");
+.font-quicksand {
+  font-family: "Quicksand";
 }
 
-.quicksand-b {
-  font-family: "Quicksand Bold";
-}
-
-@font-face { 
-  font-family: "Quicksand Regular";
-  src: url("../../assets/fonts/quicksand-regular.otf");
-}
-
-.quicksand-r {
-  font-family: "Quicksand Regular";
-}
-
-// Basic styling
-body {
-  font-family: "Helvetica Regular";
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
-  line-height: $line-height-base;
-  color: $body-text-color;
-  text-align: $body-text-align;
-  background-color: $body-background-color;
-}
-
-// Spacing
-// For mantain vertical rhythym's
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
-p {
-  margin-top: 0rem;
-  margin-bottom: $spacer/2;
-}
-
-img {
-  margin: 0;
-}
-
-// Typograph
-
-// For responsiveness
+/* Font Size */
 html {
-  font-size: $font-size-on-small-screen;
-
-  @include media-query($large-screen) {
-    font-size: $font-size-on-large-screen;
-  }
+  font-size: 75%;
 }
 
-// Headings
-h1,
-.h1 {
-  font-size: $h1-font-size;
+/* Basic Styling */
+body {
+  padding: 2rem 0rem;
+  font-family: "Helvetica";
+  letter-spacing: 0.03em;
 }
 
-h2,
-.h {
-  font-size: $h2-font-size;
+/* Reset */
+p,
+h1, h2, h3, h4, h5, h6,
+ul, li {
+  margin: 0;
+  padding: 0;
 }
 
-h3,
-.h3 {
-  font-size: $h3-font-size;
+/* Paragraph */
+p {
+  margin-bottom: 0.5rem;
 }
 
-h4,
-.h4 {
-  font-size: $h4-font-size;
-}
-
-h5,
-.h5 {
-  font-size: $h5-font-size;
-}
-
-h6,
-.h6 {
-  font-size: $h6-font-size;
-}
-
-// Small
-small,
-.small {
-  font-size: $small-font-size;
-}
-
-// Links
-a {
-  color: $link-color;
-  text-decoration: none;
-  background-color: transparent;
-
-  &:hover {
-    text-decoration: none;
-  }
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
