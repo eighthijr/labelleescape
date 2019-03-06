@@ -1,96 +1,27 @@
-// LAYOUT
+/* Layout
+*/
 
-// Wrapper
-.wrapper {
-  margin: 0rem auto;
-  padding: 0rem $spacer;
-  
-  max-width: 960px;
-  width: 90%;
-  
-  &--fluid {
-    padding: 0rem;
-    
-    width: 100%;
-  }
-}
-
-// Container
-.container {
-  margin: 0 auto;
-  padding: 0rem $spacer;
-  max-width: 960px;
-  width: calc(100% - $spacer*2);
-
-  @include media-query($large-screen) {
-    padding: none;
-  }
-  
-  &--fluid {
-    padding: 0rem;
-    
-    .column {
-      padding: 0rem;
-    }
-  }
-}
-
-// Row
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-// Columns
+/* Flex Grid */
 .column {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding: 0 $spacer/2;
+  flex: 0 0 1;
+  
+  &--100 {
+    flex: 0 0 100%;  
+  }
+  
+  &--70 {
+    flex: 0 0 70%;  
+  }
+  
+  &--50 {
+    flex: 0 0 50%;
+  }
+  
+  &--30 {
+    flex: 0 0 30%;
+  }
 }
 
-.column.fourth {
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-@media (min-width: 576px) {
-  .column {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding: 0 $spacer;
-
-    &.full {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-
-    &.two-thirds {
-      -ms-flex: 0 0 66.66667%;
-      flex: 0 0 66.66667%;
-      max-width: 66.66667%;
-    }
-
-    &.half {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-
-    &.third {
-      -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
-    }
-    &.fourth {
-      -ms-flex: 0 0 25%;
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-  } 
+.block {
+  display: block;
 }
